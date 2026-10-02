@@ -320,3 +320,41 @@ def test_collatz_sequence(n, expected):
 def test_collatz_sequence_rejects_invalid_input(n):
     with pytest.raises(ValueError):
         collatz_sequence(n)
+
+from py_simple.easy_math import clamp_value
+
+
+@pytest.mark.parametrize(
+    "value, minimum, maximum, expected",
+    [
+        (5, 0, 10, 5),
+        (-3, 0, 10, 0),
+        (42, 0, 10, 10),
+    ],
+)
+def test_clamp_value(value, minimum, maximum, expected):
+    assert clamp_value(value, minimum, maximum) == expected
+
+
+def test_clamp_value_rejects_invalid_range():
+    with pytest.raises(ValueError):
+        clamp_value(5, 10, 0)
+
+from py_simple.easy_math import keep_in_range
+
+
+@pytest.mark.parametrize(
+    "value, minimum, maximum, expected",
+    [
+        (5, 0, 10, 5),
+        (-3, 0, 10, 0),
+        (42, 0, 10, 10),
+    ],
+)
+def test_keep_in_range(value, minimum, maximum, expected):
+    assert keep_in_range(value, minimum, maximum) == expected
+
+
+def test_keep_in_range_rejects_invalid_range():
+    with pytest.raises(ValueError):
+        keep_in_range(5, 10, 0)

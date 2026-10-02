@@ -664,4 +664,10 @@ def collatz_sequence(n: int) -> list[int]:
     while n != 1:
         n = n // 2 if n % 2 == 0 else 3 * n + 1
         sequence.append(n)
-    return sequence
+    return sequence 
+
+def keep_in_range(value, minimum, maximum):
+    """Return value limited to the range from minimum to maximum."""
+    if minimum > maximum:
+        raise ValueError("minimum cannot be greater than maximum")
+    return max(minimum, min(value, maximum))
