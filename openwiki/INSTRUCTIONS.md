@@ -12,7 +12,7 @@ A developer new to Python who wants to know what each module does and how module
 Only write pages for the modules in the CURRENT PHASE. Do not rewrite pages from other phases.
 Edit an existing page only to add links to new pages.
 
-CURRENT PHASE: 1
+CURRENT PHASE: 2
 
 - Phase 1: easy_strings, easy_math, easy_json
 - Phase 2: easy_csv, easy_file_manager, easy_archive
