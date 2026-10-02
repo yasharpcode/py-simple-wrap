@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:aa91be99c5747955b412dcf2cb4fa12240e0664eef26759643421d10e441506f",
+  "claims": [
+    {
+      "id": "claim_ceed5af23af54e509703eaf5b85bd639",
+      "statement": "The library's modules, including 'easy_json', 'easy_math', and 'easy_strings', are verified through isolated tests using pytest's tmp_path and monkeypatch, which confirm proper file system interaction, state handling, and robust error wrapping into custom exceptions.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_json.py",
+          "version": "repo-file-v1:sha256:dc83a3d005e7688c24e8d5cac9cc32f608226f890bb0a37b7ab3993e094afb5b"
+        },
+        {
+          "resource": "repo://tests/test_math.py",
+          "version": "repo-file-v1:sha256:36b3d4f17bdaa60ce21a6dcf7dff84c6d4cb8b53873e5fb36e79f2336da3081a"
+        },
+        {
+          "resource": "repo://tests/test_strings.py",
+          "version": "repo-file-v1:sha256:f3aed8f0a0255d24698161ae10f3167cb8ac7b69745322fa6f0331680eeec375"
+        }
+      ]
+    },
+    {
+      "id": "claim_499c0db925aa48e58a9ec0b45b764493",
+      "statement": "All tests for the library are located within the /tests/ directory and are executed using the pytest command-line interface.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_json.py",
+          "version": "repo-file-v1:sha256:dc83a3d005e7688c24e8d5cac9cc32f608226f890bb0a37b7ab3993e094afb5b"
+        },
+        {
+          "resource": "repo://tests/test_math.py",
+          "version": "repo-file-v1:sha256:36b3d4f17bdaa60ce21a6dcf7dff84c6d4cb8b53873e5fb36e79f2336da3081a"
+        },
+        {
+          "resource": "repo://tests/test_strings.py",
+          "version": "repo-file-v1:sha256:f3aed8f0a0255d24698161ae10f3167cb8ac7b69745322fa6f0331680eeec375"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-01T20:13:54.935Z"
+  }
+}

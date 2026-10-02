@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ca3b10436a1da2cfc88a38c1e52f60ac7c295c037dbe0ccb7ecb7b2c8df4ad02",
+  "claims": [
+    {
+      "id": "claim_7a8bae284b2848a6b20b5a6cdcb3c972",
+      "statement": "The library provides a collection of 'easy_*' modules (e.g., easy_strings, easy_math, easy_json) designed to simplify common Python tasks by acting as high-level, human-readable wrappers that reduce boilerplate and enhance safety.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
+          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+        },
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_math.py",
+          "version": "repo-file-v1:sha256:7a60599b0e22342ed54066da1919018f5e9dbcd1cc902b37e0048dce35c06ed3"
+        },
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
+          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+        }
+      ]
+    },
+    {
+      "id": "claim_a86eb42b1c14492994ee96c6b1df47e6",
+      "statement": "The library utilizes a modular architecture and emphasizes testing with pytest, focusing on isolation, state management, and clear exception handling to ensure the reliability of its 'easy_*' utilities.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_file_manager.py",
+          "version": "repo-file-v1:sha256:3a06989e5c81516293fec9609e597a948a236c2e417b4f56da7cdb675c4efe99"
+        },
+        {
+          "resource": "repo://tests/test_sql.py",
+          "version": "repo-file-v1:sha256:b80934dcaca4389cf94b8882dc85da43439af1c623e42f782f5bfe8938a646ac"
+        }
+      ]
+    },
+    {
+      "id": "claim_dbb4b6642a1b466499f80588d66a3e50",
+      "statement": "The py_simple library consists of modular, easy-to-use wrappers designed to simplify common Python development tasks.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
+          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+        },
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_math.py",
+          "version": "repo-file-v1:sha256:7a60599b0e22342ed54066da1919018f5e9dbcd1cc902b37e0048dce35c06ed3"
+        },
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
+          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+        }
+      ]
+    },
+    {
+      "id": "claim_8fad1a381afb42e382d6b6e54a4e514d",
+      "statement": "The library emphasizes readability and standardized error handling, specifically through the use of domain-specific error types.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
+          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-02T10:05:03.134Z"
+  }
+}
