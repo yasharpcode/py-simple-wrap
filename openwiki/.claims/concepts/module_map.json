@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:86fa44b7eb3fa739564196c315aeb39cce78d645431f6b670b7b52b4e0f25a1b",
+  "claims": [
+    {
+      "id": "claim_22de53d98f474744a0e873a3ab7a63d6",
+      "statement": "The Module Map serves as the central index for the project, cataloging modules categorized by functional area as defined in the master module book.",
+      "evidence": [
+        {
+          "resource": "repo://module-book/data/modules.js#L56-L595",
+          "version": "repo-lines-v1:sha256:179da1fab767a7af601e879e18311b781caabf5a882ed6f3364dced36c27b085:eyJzZWxlY3RlZExpbmVDb3VudCI6NTQwLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiIwOTNiNjc5N2VhYThkNDllN2NhYTQ0NDYyMmFiYjFkNTA4M2M0OWQ1ZTIwN2U0YzRhMjI5M2ExMTM5NjBhZjAzIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiIyZmUxMWE3MTJiOGM3M2MwOTdlOGExZjBhY2JhOWM0MjI2MTVjM2I5ZWU3N2Y3YTcwYjE2YWRmMTE5NzEzZTBkIiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiJkNjkxNjlhNGMyZGY3MGEwMDZlM2ExZmQ1N2I1MGJhZTc1NWU5NmRkOTA1MTAzY2RhODNlMTMyNzFmZGMwNDQ1IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-02T10:05:03.134Z"
+  }
+}

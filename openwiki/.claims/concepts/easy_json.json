@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b7d7d0e560e1be009bbc0f3832075a9ff0107b35c872e8837cb5d4fab8d51c79",
+  "claims": [
+    {
+      "id": "claim_4a984d0423444085a8c921e6935bd4a5",
+      "statement": "The easy_json module provides simplified functions for JSON file operations with consistent error handling using EasyJsonError.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
+          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+        }
+      ]
+    },
+    {
+      "id": "claim_c6f9e13d702647e6aa258e28ef2d9098",
+      "statement": "get_nested provides safe navigation of nested JSON structures using dot-notation paths.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py#L26-L57",
+          "version": "repo-lines-v1:sha256:195e153462f73e1651e2d8a4f1b32b1e0cc6bb81f09282c044d87ed897a51097:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyNGU2NWRiMmU4NDFjNzA4ZTkwNTk1ZWY5ZGQyMjEwOWVlYjAzYmMxOThmZTNiMjE3OGUxZTBhMmM3ZjhjZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyM2ZiMmMwMTYzOGI2NzQ0OGIyNDZmOWU1MTBkNTgwMGEwMjNkZTViOTcwYTU2NDJjN2E0MTZkODRmNDYwZWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2NjRmZGM4ZjQxMjU3NTE0NmRjY2UxNmVkZjgwNGJkYWIxMjZmZTNkN2IwNjYxNzkwMjkyMzI5M2UxMDQzN2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkNTcwZjJmZDNkYjBlZWZjMWU0N2ZjNDZkNmRhY2YyNmI5MzAxY2I0MzA5ZmIyMmNlOWY4OWJjM2E4NTc1NTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_515c773cd51040589564aa06ef8d63b2",
+      "statement": "The module is verified by tests in tests/test_json.py, covering file operations, error conditions, and utility functions.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_json.py",
+          "version": "repo-file-v1:sha256:dc83a3d005e7688c24e8d5cac9cc32f608226f890bb0a37b7ab3993e094afb5b"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-02T10:05:03.134Z"
+  }
+}

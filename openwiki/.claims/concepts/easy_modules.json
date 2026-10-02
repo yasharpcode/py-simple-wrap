@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:b9027d365830e4deda50ccb6a4455ab26a43a3eb28acc2f35e22c8ca1331a0d1",
+  "claims": [
+    {
+      "id": "claim_6cc159cb80334529a157e78892f69837",
+      "statement": "The 'easy_*' modules act as high-level, human-readable wrappers designed to simplify common programming tasks by eliminating boilerplate code found in standard and third-party libraries.",
+      "evidence": [
+        {
+          "resource": "repo://MODULES.md#L15-L74",
+          "version": "repo-lines-v1:sha256:f9c3b6ad343e9f6e3ba44aa919f34e40563307178048b9ae28d18e84a2e711cd:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjNzI3MzdlOWU5NWIwMjZhYjhjYjIwZjFmZTkzMTIwNzljMTM0YTQ5ZGFmOWY0ZWZkMzZjY2Y4MzZiMzFlMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlMzJiN2FlNTlmODQ3YzJiMjkwMTNiYTkyYWU3ZGUwM2I5YzcxZDEwYWNkNDc2NDA1ZWYzODBhYTQ1NWFhODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2ODNhZmQ5NTQ1NjIxZTNiOTI1Mzg3YzQ4MmQxYzI2YzZiYTkyYWRhYTQwODYxZjZkMTgxODdkNDc3N2U3N2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlYTUyZDI3MjMwYjg5Y2ExYjczMjg2NmFmYmUxMzdhOThlNjUxMDAwNDlhNTZiMzI5M2RlZjhkNWZlN2RkYTAifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_d5ec0b348b2a40f3bbcbd6f86d0ec5e5",
+      "statement": "Modules often start as experimental utilities and transition to the public, stable API once they have achieved standardized error handling and full unit test coverage.",
+      "evidence": [
+        {
+          "resource": "repo://CHANGELOG.md#L85-L87",
+          "version": "repo-lines-v1:sha256:3f1c2bed78b4e8f8aa9b05486124eb71da00d4f212528a70a54bad7cf395e9a5:eyJzZWxlY3RlZExpbmVDb3VudCI6MywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNDk1YjMwYmM3NjBiMDNlZjQwOGY3NmMyMGI2NTQ4YTE0Y2JhY2Y3NTgxNjE5NzA4ZjAwNzVmYmQ3Njc5OWY5ZiIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiZjdkM2MzMDlkNGUyMzU2NDY4NDcwNWZkNjg4OGEyOTI1OGQ0OTczNjdiOTIzMzdiYjcyZmJkYjk4MTUyOTI5NSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDY1ZWZiZTUyYzIxNTA0NmQ3MDI5MTI1MDliOGZhOWM5NzYyNmY2MzI1ZTYwYzU0MGRhZWYzZTQwMDg2MjEzNiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYzVmMzJiYjEwYzA0ZTI4NGFjZmU3YjEwZTc4N2ViNTdhNDEyMTY1Mzk0NTE4MTRmODJmM2JhZTlmNWVhYzRlZCJ9"
+        },
+        {
+          "resource": "repo://CHANGELOG.md#L97-L98",
+          "version": "repo-lines-v1:sha256:b779f9411f999dada95038239e3daa1cc8c08adeb7470179bec20cfb3c7138aa:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNmFlMjBiYThhNGExNDMzM2NiZDliNDMzMzM4NTM3NjJhMjhhNGNhMWMwNzYwOTMzZWY5YTQ2MTcxYWNlM2NmYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiN2IzOTY4NTZiMTY5OTVjYjg0MTZiM2M2YWQxNjNkNTc2YTk3ZmUzMjhlNThlOGRjYmM0YmJhZDk3ZjVhYmU0ZiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYjI2ZWNjMTU0NTk4NzBkNGM5N2U0ZTYzMThjZWJlZDM5ODU4YzQyYWZhNDZkMzkzZjdmMDgwOTE3NmVmMGJhOCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiM2VlMzZlNmZjMDQ5MTkzMWQ5ZDg1OTA4ZmJhNjJlMmEzZGI1MTNkZWY5ZGJkODFhYjg4MWRhODVjNThjM2Y5NiJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_057c14491a5b4cc18c67a0c204c85d66",
+      "statement": "The design philosophy of 'easy_*' modules prioritizes readability, reduction of infrastructure setup, and safety, often providing built-in guards against common pitfalls like SQL injection.",
+      "evidence": [
+        {
+          "resource": "repo://CHANGELOG.md#L50-L51",
+          "version": "repo-lines-v1:sha256:afee0d104dd612a4aae9ae1e3f3677c650249b936ab0b4ceaaa4dd3c36140d97:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiNjkxNjhkYWI3NmEzYjY0ZTBmZGIxYWNjMmU2OWJlMjM2ODIyNWMyNWJlZjdkOTFjYjhmODE5NDMwN2I2ZTE4MSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMmI4MzlkM2ZmYjFkNzMyZjYzNjc5YmY4NWRiZmUxMWI5MmRiYjRiYmMxY2ViMDY3MWU1OGZlMzZhN2FjOGY5ZSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiMWJiY2E0MGZmYjgzNzhlMTZhMDg4NzAxMmM1MzA4NWEzYWY2ZTJiZGEwMGQyNzViNGQxNzQxNWY2ZDU1MDQ0ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiOGFkMTRiM2IzZGM0NmE0MWEwNTVmOTQ3NGExZDExMTJlOTlkYTEzMzNkN2Y5YWZiNWRkOWZjOGVmMzBkNGRhZiJ9"
+        },
+        {
+          "resource": "repo://CHANGELOG.md#L80-L81",
+          "version": "repo-lines-v1:sha256:34708dc4f8eb39ae9eed94dface44838549a0e6777a41c731c058b4c009a7d59:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZjk3YTU1ZDY5M2Y5OWM0NTVlOWI0NTI2Njc1NjcxYzA1MGJjNTNiMWZiM2RkNzk4MmEyMWVjMGFmYWI2YzZiYSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNTU3MjFmOWM0OTYwMjY4ZmVmZGY0ZWUyOWY1ZjZmZDYzMWQyMWI3MDE5ODE5NWRkZTYwODY3Y2UyNzRiODI2YyIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZThiMDk3NmYxMTFiYTIwMWQyMDYyYTdmYjVlYzZkOTEzOTVlYzU1YjU5MGQxZmM2OTU5MWFmMGJlMTM1MmY1ZCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNDY1ZWZiZTUyYzIxNTA0NmQ3MDI5MTI1MDliOGZhOWM5NzYyNmY2MzI1ZTYwYzU0MGRhZWYzZTQwMDg2MjEzNiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-02T10:05:03.134Z"
+  }
+}

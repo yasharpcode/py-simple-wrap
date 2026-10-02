@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2a22941b979565bc7be944c98dd26922bae9e58b4a7f930df23f56c1ee92909b",
+  "claims": [
+    {
+      "id": "claim_1e7e3aecae8a4b54b3fb07309d005ac7",
+      "statement": "The easy_strings module provides high-level, beginner-friendly utility functions for common string manipulation, including case conversion, normalization, and analysis.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
+          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+        }
+      ]
+    },
+    {
+      "id": "claim_a21ef5bbe82c41cb86ca6ae7a317123b",
+      "statement": "The module's functionality is verified through parameterized unit tests that cover various edge cases, including empty strings and complex formatting.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_strings.py",
+          "version": "repo-file-v1:sha256:f3aed8f0a0255d24698161ae10f3167cb8ac7b69745322fa6f0331680eeec375"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-02T10:05:03.134Z"
+  }
+}
