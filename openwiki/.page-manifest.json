@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "pages": {
+    "/openwiki/concepts/easy_archive.md": {
+      "pageVersion": "sha256:eaa850a12117206600900162fb33eba536af826a36f2e765d89d2c76af2519ca",
+      "completedBy": "openwiki/0.5.1",
+      "completedRunId": "aa41d1cd-e6c3-402c-85d3-e09149d7885e",
+      "gitHead": "733682678a525f31a9a0a8b111c204fbba52fbf2",
+      "sourceFingerprint": "sha256:02e6b53d17a02c5bc8d08df231e434bad205945e831b1c58f2e208067f6951c6"
+    }
+  }
+}
