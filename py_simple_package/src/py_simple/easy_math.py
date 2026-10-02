@@ -671,3 +671,31 @@ def keep_in_range(value, minimum, maximum):
     if minimum > maximum:
         raise ValueError("minimum cannot be greater than maximum")
     return max(minimum, min(value, maximum))
+
+def weighted_average(values, weights):
+    """Calculate the weighted average of a list of numbers.
+
+    Each value counts according to its weight. This is useful for things like
+    grades, where an exam can count more than a quiz.
+
+    Args:
+        values: A list of numbers.
+        weights: A list of weights, one for each value.
+
+    Returns:
+        The weighted average as a float.
+
+    Raises:
+        ValueError: If the lists are empty, have different lengths,
+            or the weights add up to zero.
+
+    Example:
+        >>> weighted_average([80, 90], [1, 3])
+        87.5
+    """
+    if not values or len(values) != len(weights):
+        raise ValueError("values and weights must be non-empty and the same length")
+    total_weight = sum(weights)
+    if total_weight == 0:
+        raise ValueError("weights cannot add up to zero")
+    return sum(v * w for v, w in zip(values, weights)) / total_weight

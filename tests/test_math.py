@@ -358,3 +358,30 @@ def test_keep_in_range(value, minimum, maximum, expected):
 def test_keep_in_range_rejects_invalid_range():
     with pytest.raises(ValueError):
         keep_in_range(5, 10, 0)
+
+from py_simple.easy_math import weighted_average
+
+
+@pytest.mark.parametrize(
+    "values, weights, expected",
+    [
+        ([80, 90], [1, 3], 87.5),
+        ([10, 20, 30], [1, 1, 1], 20.0),
+        ([50], [2], 50.0),
+    ],
+)
+def test_weighted_average(values, weights, expected):
+    assert weighted_average(values, weights) == expected
+
+
+@pytest.mark.parametrize(
+    "values, weights",
+    [
+        ([], []),
+        ([1, 2], [1]),
+        ([1, 2], [0, 0]),
+    ],
+)
+def test_weighted_average_rejects_invalid_input(values, weights):
+    with pytest.raises(ValueError):
+        weighted_average(values, weights)
