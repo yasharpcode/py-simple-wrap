@@ -40,6 +40,7 @@ jobs:
           OPENWIKI_MODEL_ID: "gemini-3.1-flash-lite"
           OPENWIKI_PROVIDER_RETRY_ATTEMPTS: "10"
           OPENWIKI_TELEMETRY_DISABLED: "1"
+          OPENWIKI_DEBUG: "1"
 
       - name: Remove transient OpenWiki run state
         if: ${{ !cancelled() }}
