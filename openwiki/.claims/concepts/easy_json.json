@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:b7d7d0e560e1be009bbc0f3832075a9ff0107b35c872e8837cb5d4fab8d51c79",
+  "pageVersion": "sha256:6da3df2b8f5c99c9354585ed14ac75217286d6592d6516d8e2d506e92b75a01b",
   "claims": [
     {
       "id": "claim_4a984d0423444085a8c921e6935bd4a5",
@@ -31,10 +31,50 @@
           "version": "repo-file-v1:sha256:dc83a3d005e7688c24e8d5cac9cc32f608226f890bb0a37b7ab3993e094afb5b"
         }
       ]
+    },
+    {
+      "id": "claim_e605637ac31d4f43beb30d0261441a01",
+      "statement": "The easy_json module provides a simplified interface for JSON I/O and data navigation within the py_simple package.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
+          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+        }
+      ]
+    },
+    {
+      "id": "claim_2c69c3e8ec4e4261be94cafb63c4dfea",
+      "statement": "The module centralizes error handling via the EasyJsonError exception to provide predictable failure reporting for file operations and JSON parsing.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py#L9-L23",
+          "version": "repo-lines-v1:sha256:bf33cea0f7d9d4bd04934bfe64dd5d7cad0a4c56d55b2d93d2c348b597afc566:eyJzZWxlY3RlZExpbmVDb3VudCI6MTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ0NWMxYjc1ZmMwNGIyYzg4ZDYxMTU4ZWIzYWY2NDJlNDJhZmQ1NmQ4YTUwZWY1ZWQ1OTYyNjRhMzNmZGJmMDYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxMmU2OWZiZDQ2MmNlYzMxZmVhMTcxZjVkZTk0YjI4MWEwMDkzZWVmMDJhOTJlZWQ2YWJmMDc4ZWE3Yzg0YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjQwN2VkODI4MGJhMWUyZTVmZWZlOWJjY2JlYjM5N2U0YTBlMTIxMzU3ZDFiYWIzOWE2NTQ4NzI2MWNjMWZlM2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjJiYTA2ZGY2YjNkMzc1NjU3NGFmNGNkMDk5MzYyNmE5OTY0MjMzNzBiMTNhZTMzZWIwY2E5MWMyZjgzYzM2MjUifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_698d9e8afee84faa933902ff446d4463",
+      "statement": "The get_nested function enables safe retrieval of nested values from dictionaries and lists using dot-separated paths.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_json.py#L26-L57",
+          "version": "repo-lines-v1:sha256:195e153462f73e1651e2d8a4f1b32b1e0cc6bb81f09282c044d87ed897a51097:eyJzZWxlY3RlZExpbmVDb3VudCI6MzIsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAyNGU2NWRiMmU4NDFjNzA4ZTkwNTk1ZWY5ZGQyMjEwOWVlYjAzYmMxOThmZTNiMjE3OGUxZTBhMmM3ZjhjZjciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyM2ZiMmMwMTYzOGI2NzQ0OGIyNDZmOWU1MTBkNTgwMGEwMjNkZTViOTcwYTU2NDJjN2E0MTZkODRmNDYwZWQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImY2NjRmZGM4ZjQxMjU3NTE0NmRjY2UxNmVkZjgwNGJkYWIxMjZmZTNkN2IwNjYxNzkwMjkyMzI5M2UxMDQzN2YiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkNTcwZjJmZDNkYjBlZWZjMWU0N2ZjNDZkNmRhY2YyNmI5MzAxY2I0MzA5ZmIyMmNlOWY4OWJjM2E4NTc1NTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_fa16228526684d9791160d973a78f88c",
+      "statement": "The easy_json module's behavior, including file I/O, error propagation, and nested data access, is validated through unit tests in test_json.py.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_json.py",
+          "version": "repo-file-v1:sha256:dc83a3d005e7688c24e8d5cac9cc32f608226f890bb0a37b7ab3993e094afb5b"
+        }
+      ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-02T10:05:03.134Z"
+    "at": "2026-10-02T10:48:26.598Z"
   }
 }

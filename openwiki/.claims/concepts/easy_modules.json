@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:b9027d365830e4deda50ccb6a4455ab26a43a3eb28acc2f35e22c8ca1331a0d1",
+  "pageVersion": "sha256:275c9c9c0c11ad50a41bf32000423ba2aa9e56fb64c8c3838af9b7fde16e95bb",
   "claims": [
     {
       "id": "claim_6cc159cb80334529a157e78892f69837",
-      "statement": "The 'easy_*' modules act as high-level, human-readable wrappers designed to simplify common programming tasks by eliminating boilerplate code found in standard and third-party libraries.",
+      "statement": "The 'easy_*' modules act as high-level, human-readable wrappers designed to simplify common programming tasks across domains such as file management, AI integration, and data processing by eliminating boilerplate code found in standard and third-party libraries.",
       "evidence": [
         {
-          "resource": "repo://MODULES.md#L15-L74",
-          "version": "repo-lines-v1:sha256:f9c3b6ad343e9f6e3ba44aa919f34e40563307178048b9ae28d18e84a2e711cd:eyJzZWxlY3RlZExpbmVDb3VudCI6NjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6ImJjNzI3MzdlOWU5NWIwMjZhYjhjYjIwZjFmZTkzMTIwNzljMTM0YTQ5ZGFmOWY0ZWZkMzZjY2Y4MzZiMzFlMjYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlMzJiN2FlNTlmODQ3YzJiMjkwMTNiYTkyYWU3ZGUwM2I5YzcxZDEwYWNkNDc2NDA1ZWYzODBhYTQ1NWFhODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijc2ODNhZmQ5NTQ1NjIxZTNiOTI1Mzg3YzQ4MmQxYzI2YzZiYTkyYWRhYTQwODYxZjZkMTgxODdkNDc3N2U3N2IiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlYTUyZDI3MjMwYjg5Y2ExYjczMjg2NmFmYmUxMzdhOThlNjUxMDAwNDlhNTZiMzI5M2RlZjhkNWZlN2RkYTAifQ"
+          "resource": "repo://MODULES.md#L11-L74",
+          "version": "repo-lines-v1:sha256:d69034e43a088dcf10855b29a010506f2d86a4aa4e38897df6dc4c6504182925:eyJzZWxlY3RlZExpbmVDb3VudCI6NjQsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjYxNTkxOTA2YTE5YTdlNzVmMDgyOGM4MDA0Y2FhMWQyY2UxNzdjYmQyOGRlMzJmMGE4MDBlYzhiY2M3YzZhZmUiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjhlMzJiN2FlNTlmODQ3YzJiMjkwMTNiYTkyYWU3ZGUwM2I5YzcxZDEwYWNkNDc2NDA1ZWYzODBhYTQ1NWFhODYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjA3ZmVlOWNmMGVmMTMzOWIyZTQyMGY4ZmIyZDk0MjkyYTFlMjE0NzBhMWRhYjI5MTJlZjRmZDJmMzVkNWMxYzciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImFlYTUyZDI3MjMwYjg5Y2ExYjczMjg2NmFmYmUxMzdhOThlNjUxMDAwNDlhNTZiMzI5M2RlZjhkNWZlN2RkYTAifQ"
         }
       ]
     },
@@ -28,7 +28,7 @@
     },
     {
       "id": "claim_057c14491a5b4cc18c67a0c204c85d66",
-      "statement": "The design philosophy of 'easy_*' modules prioritizes readability, reduction of infrastructure setup, and safety, often providing built-in guards against common pitfalls like SQL injection.",
+      "statement": "The design philosophy of 'easy_*' modules prioritizes readability, reduction of infrastructure setup, and safety, often providing built-in guards against common pitfalls like SQL injection or input validation errors.",
       "evidence": [
         {
           "resource": "repo://CHANGELOG.md#L50-L51",
@@ -43,6 +43,6 @@
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-02T10:05:03.134Z"
+    "at": "2026-10-02T10:48:26.598Z"
   }
 }

@@ -5,18 +5,22 @@ description: A collection of beginner-friendly utility functions for common math
 tags: [python, math, utility, beginner-friendly]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-02T10:05:03.134Z
+    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-fd42d82e0d9df310748c0c5b
     resource: repo://py_simple_package/src/py_simple/easy_math.py
   - id: openwiki-source-681159c72987c1cb03ad99ef
     resource: repo://tests/test_math.py
-generated: { by: "openwiki/0.5.1", at: "2026-10-02T10:05:03.134Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-10-02T10:48:26.598Z" }
 ---
 
 # easy_math
 
 The `easy_math` module provides a suite of simplified, intuitive helper functions for performing common mathematical calculations. It is designed for developers who need reliable implementations of mathematical routines without the complexity of low-level boilerplate code.
+
+## Purpose
+
+The primary purpose of `easy_math` is to offer mathematical utilities that abstract away boilerplate, making common numerical tasks more readable and easier to implement.
 
 ## Main Functions
 
@@ -46,11 +50,11 @@ The module includes functions for number theory, sequence generation, and genera
 
 The `easy_math` module is validated through a comprehensive suite of tests located at `repo://tests/test_math.py`. These tests cover edge cases and verify the accuracy of each mathematical helper function.
 
-## Integration
+## Related Modules
 
-`easy_math` is a fundamental module within the `py_simple` ecosystem. It is often used in conjunction with:
-
-<!-- openwiki: broken internal link [/concepts/easy_numbers.md] file "/concepts/easy_numbers.md" does not exist. Fix the href or restore the target, then delete this comment. -->
-- [`easy_numbers`](/concepts/easy_numbers.md): For further number-related utilities.
-<!-- openwiki: broken internal link [/concepts/easy_stats.md] file "/concepts/easy_stats.md" does not exist. Fix the href or restore the target, then delete this comment. -->
-- [`easy_stats`](/concepts/easy_stats.md): For statistical analysis.
+<!-- openwiki: broken internal link [/concepts/easy_modules.md] file "/concepts/easy_modules.md" does not exist. Fix the href or restore the target, then delete this comment. -->
+- [easy_modules](/concepts/easy_modules.md) (Back-link)
+<!-- openwiki: broken internal link [/concepts/easy_strings.md] file "/concepts/easy_strings.md" does not exist. Fix the href or restore the target, then delete this comment. -->
+- [easy_strings](/concepts/easy_strings.md)
+<!-- openwiki: broken internal link [/concepts/easy_json.md] file "/concepts/easy_json.md" does not exist. Fix the href or restore the target, then delete this comment. -->
+- [easy_json](/concepts/easy_json.md)

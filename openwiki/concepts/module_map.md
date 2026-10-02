@@ -3,9 +3,6 @@ type: index
 title: Module Map
 description: A central index of all documented modules within the project.
 tags: [architecture, module, index]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:05:03.134Z
 sources:
   - id: openwiki-source-4d81aa7262f7fb6a0368e01e
     resource: repo://module-book/data/modules.js

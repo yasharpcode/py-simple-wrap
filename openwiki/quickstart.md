@@ -3,9 +3,6 @@ type: index
 title: Quickstart Guide
 description: Entry point for the py_simple ecosystem, providing an overview of core modules and development principles.
 tags: [introduction, documentation, quickstart, overview]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:05:03.134Z
 sources:
   - id: openwiki-source-942619f3d8244bc55818b59a
     resource: repo://py_simple_package/src/py_simple/easy_json.py

@@ -3,9 +3,6 @@ type: guide
 title: Testing Guide
 description: Guide developers on maintaining and verifying the integrity of the easy_strings, easy_math, and easy_json modules through testing.
 tags: [testing, quality-assurance, developer-guide]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-01T20:13:54.935Z
 sources:
   - id: openwiki-source-66f9bdfbd018181ae2f17579
     resource: repo://tests/test_json.py
