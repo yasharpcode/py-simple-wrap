@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:31dfea474180bdbf642e11d8ecc925c127689a06a5bcb50f654652eaf8b73620",
+  "pageVersion": "sha256:77d9031aa010f672a5cc1ab5f59aa401d23a61b9c11a7c5db73fa0c6cb92cad1",
   "claims": [
     {
       "id": "claim_fb612682037c4cfdb6b816d109f3c998",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
-          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+          "version": "repo-file-v1:sha256:add85e26353bbd9e896cfdf80467996358433b98ec24e2e1208e56dba005796c"
         }
       ]
     },
@@ -18,7 +18,7 @@
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_math.py",
-          "version": "repo-file-v1:sha256:7a60599b0e22342ed54066da1919018f5e9dbcd1cc902b37e0048dce35c06ed3"
+          "version": "repo-file-v1:sha256:f40a7ccab2e187cf116faf8299c55975010bfba037c5447a63ad329aed39e387"
         }
       ]
     },
@@ -28,13 +28,13 @@
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
-          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+          "version": "repo-file-v1:sha256:7af1e5e55e28376f0d8fe7c83e99c701ceeabcd63e963ac8d072bf6977d708fc"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-01T20:13:54.935Z"
+    "at": "2026-10-03T08:03:44.240Z"
   }
 }
