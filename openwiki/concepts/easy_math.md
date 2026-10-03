@@ -3,9 +3,6 @@ type: module
 title: easy_math
 description: A collection of beginner-friendly utility functions for common mathematical operations.
 tags: [python, math, utility, beginner-friendly]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-fd42d82e0d9df310748c0c5b
     resource: repo://py_simple_package/src/py_simple/easy_math.py

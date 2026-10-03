@@ -5,7 +5,7 @@ description: Overview of the supported modules and their primary functionalities
 tags: [python, architecture, modules, documentation]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-01T20:13:54.935Z
+    at: 2026-10-03T08:03:44.240Z
 sources:
   - id: openwiki-source-942619f3d8244bc55818b59a
     resource: repo://py_simple_package/src/py_simple/easy_json.py
@@ -13,7 +13,7 @@ sources:
     resource: repo://py_simple_package/src/py_simple/easy_math.py
   - id: openwiki-source-f2f5b73375793cffe298f0eb
     resource: repo://py_simple_package/src/py_simple/easy_strings.py
-generated: { by: "openwiki/0.5.1", at: "2026-10-01T20:13:54.935Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-10-03T08:03:44.240Z" }
 ---
 
 # Module Architecture
@@ -33,13 +33,13 @@ This section details the most frequently used modules within the `py_simple` eco
 ## Module Details
 
 ### easy_strings
-The `easy_strings` module is intended for common string manipulation tasks. It provides abstraction layers for complex operations like text formatting, case conversion, and normalization.
+The `easy_strings` module provides high-level utility functions for common string manipulation tasks, including text formatting, case conversion, and normalization, abstracting the need for manual regex or complex list join operations.
 
 ### easy_math
-The `easy_math` module offers simplified interfaces for common mathematical operations that might otherwise require more boilerplate code or imports. It handles edge cases and common error scenarios automatically, providing a smoother developer experience.
+The `easy_math` module provides beginner-friendly, high-level interfaces for standard mathematical operations, abstracting complexity and providing consistent behavior for edge cases like zero handling in LCM or input validation for factorials.
 
 ### easy_json
-The `easy_json` module serves as an abstraction for handling JSON files. It simplifies I/O operations and provides safe ways to query nested JSON structures using simple dot-notation strings, reducing the need for explicit manual error handling and type checking.
+The `easy_json` module streamlines JSON data handling by providing simplified file I/O operations and robust methods for querying nested structures via dot-notation, while also centralizing error reporting via `EasyJsonError`.
 
 ---
 
