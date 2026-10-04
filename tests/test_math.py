@@ -385,3 +385,44 @@ def test_weighted_average(values, weights, expected):
 def test_weighted_average_rejects_invalid_input(values, weights):
     with pytest.raises(ValueError):
         weighted_average(values, weights)
+
+from py_simple.easy_math import (
+    percentage_change,
+    is_power_of_two,
+    round_to_nearest,
+)
+
+
+@pytest.mark.parametrize(
+    "old, new, expected",
+    [(50, 75, 50.0), (200, 150, -25.0), (10, 10, 0.0)],
+)
+def test_percentage_change(old, new, expected):
+    assert percentage_change(old, new) == expected
+
+
+def test_percentage_change_rejects_zero_old_value():
+    with pytest.raises(ValueError):
+        percentage_change(0, 10)
+
+
+@pytest.mark.parametrize(
+    "n, expected",
+    [(1, True), (2, True), (16, True), (12, False), (0, False), (-8, False)],
+)
+def test_is_power_of_two(n, expected):
+    assert is_power_of_two(n) is expected
+
+
+@pytest.mark.parametrize(
+    "value, step, expected",
+    [(13, 5, 15), (12, 5, 10), (7.3, 0.5, 7.5)],
+)
+def test_round_to_nearest(value, step, expected):
+    assert round_to_nearest(value, step) == expected
+
+
+@pytest.mark.parametrize("step", [0, -1])
+def test_round_to_nearest_rejects_bad_step(step):
+    with pytest.raises(ValueError):
+        round_to_nearest(10, step)

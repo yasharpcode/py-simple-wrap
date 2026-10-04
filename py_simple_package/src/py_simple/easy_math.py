@@ -699,3 +699,14 @@ def weighted_average(values, weights):
     if total_weight == 0:
         raise ValueError("weights cannot add up to zero")
     return sum(v * w for v, w in zip(values, weights)) / total_weight
+
+def is_power_of_two(n):
+    """Return True if n is a power of two (1, 2, 4, 8, 16, ...).
+
+    Example:
+        >>> is_power_of_two(16)
+        True
+    """
+    if not isinstance(n, int) or isinstance(n, bool) or n <= 0:
+        return False
+    return n & (n - 1) == 0
