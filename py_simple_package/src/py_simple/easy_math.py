@@ -710,3 +710,11 @@ def is_power_of_two(n):
     if not isinstance(n, int) or isinstance(n, bool) or n <= 0:
         return False
     return n & (n - 1) == 0
+
+def cube_value(x):
+    """Return x multiplied by itself three times."""
+    return x * x * x
+
+def add_two_num(a,b):
+    return a+b
+
