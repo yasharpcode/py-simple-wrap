@@ -1,40 +1,40 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:31dfea474180bdbf642e11d8ecc925c127689a06a5bcb50f654652eaf8b73620",
+  "pageVersion": "sha256:4fcfbf3902c0f6b8f81ad17cf8951e5ce5960630e235ae70c919f623fd185457",
   "claims": [
     {
       "id": "claim_fb612682037c4cfdb6b816d109f3c998",
-      "statement": "The easy_strings module provides high-level utility functions for common string manipulation tasks like formatting, case conversion, and normalization.",
+      "statement": "The easy_strings module provides utility functions for common string manipulation, such as normalizing whitespace and converting text between casing styles (snake, kebab, camel).",
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
-          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+          "version": "repo-file-v1:sha256:add85e26353bbd9e896cfdf80467996358433b98ec24e2e1208e56dba005796c"
         }
       ]
     },
     {
       "id": "claim_ca60dffa38b2477f9121d53c64ace1ad",
-      "statement": "The easy_math module provides beginner-friendly, high-level interfaces for standard mathematical operations, abstracting complexity and providing consistent behavior for edge cases.",
+      "statement": "The easy_math module provides high-level interfaces for mathematical operations, including finding the least common multiple, calculating factorials, and generating Fibonacci sequences, with built-in validation for edge cases.",
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_math.py",
-          "version": "repo-file-v1:sha256:7a60599b0e22342ed54066da1919018f5e9dbcd1cc902b37e0048dce35c06ed3"
+          "version": "repo-file-v1:sha256:e914aa351e38ff09d5897b99cba74611d73385ec55c94ea046254ec11fbe1c92"
         }
       ]
     },
     {
       "id": "claim_f3d2d55f54ac41b38a0f2f531d2711ee",
-      "statement": "The easy_json module streamlines JSON data handling by providing simplified file I/O operations and robust methods for querying nested structures via dot-notation.",
+      "statement": "The easy_json module streamlines JSON file handling by providing unified I/O functions that use custom exceptions and a safe method for querying nested structures via dot-notation.",
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_json.py",
-          "version": "repo-file-v1:sha256:b19d3e04eb1ba5ee66b9e16d70f6c6297bb91a3325f7ec07bf3495c8f7792280"
+          "version": "repo-file-v1:sha256:7af1e5e55e28376f0d8fe7c83e99c701ceeabcd63e963ac8d072bf6977d708fc"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-01T20:13:54.935Z"
+    "at": "2026-10-10T08:03:33.397Z"
   }
 }
