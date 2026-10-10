@@ -5,7 +5,7 @@ description: Overview of the supported modules and their primary functionalities
 tags: [python, architecture, modules, documentation]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-01T20:13:54.935Z
+    at: 2026-10-10T08:03:33.397Z
 sources:
   - id: openwiki-source-942619f3d8244bc55818b59a
     resource: repo://py_simple_package/src/py_simple/easy_json.py
