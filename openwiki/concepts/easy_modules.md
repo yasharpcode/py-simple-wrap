@@ -5,18 +5,18 @@ description: The 'easy_*' modules are a collection of high-level utility librari
 tags: [architecture, design-philosophy, modules, utilities]
 verified:
   - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
+    at: 2026-10-17T08:11:38.702Z
 sources:
   - id: openwiki-source-ca6cb4b1a14fd7969dfae3ec
     resource: repo://CHANGELOG.md
   - id: openwiki-source-32bad1c2cf8043a773210f68
     resource: repo://MODULES.md
-generated: { by: "openwiki/0.5.1", at: "2026-10-02T10:48:26.598Z" }
+generated: { by: "openwiki/0.5.1", at: "2026-10-17T08:11:38.702Z" }
 ---
 
 # Easy Modules
 
-The `easy_*` modules serve as the foundational utility layer for the project. These modules act as high-level, human-readable abstractions over complex standard library features and verbose third-party APIs. By standardizing common programming patterns—such as file management, data processing, web interactions, and AI integration—they enable developers to focus on application logic rather than infrastructure configuration.
+The `easy_*` modules form the foundational utility layer for the project. These modules act as high-level, human-readable abstractions over complex standard library features and verbose third-party APIs. By standardizing common programming patterns—such as file management, data processing, web interactions, and AI integration—they enable developers to focus on application logic rather than infrastructure configuration.
 
 For a comprehensive index of all available utility modules, see the [Module Reference](repo://MODULES.md).
 
@@ -30,6 +30,15 @@ The central objective of the `easy_*` suite is **simplification**. Many essentia
 *   **Boilerplate Elimination**: Modules automate routine infrastructure setup, configuration, and cleanup, enforcing best practices by default.
 *   **Modular Architecture**: The library is organized into specialized domains, allowing developers to import only the utilities needed for specific tasks.
 *   **Robustness by Default**: Each module incorporates built-in safety features, such as standardized exception hierarchies (e.g., `Easy*Error` classes), input validation, and security safeguards (e.g., query parameterization in `easy_sql`).
+
+## Core Architecture and Lifecycle
+
+The `easy_*` modules transition through a defined lifecycle to ensure stability:
+
+1.  **Experimental Phase**: New utilities typically begin as experimental features, marked with `ExperimentalWarning` to signify potential API changes.
+2.  **Stable Promotion**: Modules move to the public, stable API once they meet criteria for comprehensive unit test coverage and standardized error handling.
+
+This lifecycle ensures that while the library remains dynamic and responsive to community needs, its public-facing interfaces remain reliable and consistent.
 
 ## Typical Usage Patterns
 
@@ -56,12 +65,6 @@ from py_simple import open_db
 db = open_db("my_app.db")
 users = db.run_select("SELECT * FROM users")
 ```
-
-## Lifecycle and Maintenance
-
-*   **Evolution**: The library is dynamic; new modules and functions are added in response to community requirements. New, experimental features are typically marked with an `ExperimentalWarning` until they meet stable test coverage requirements.
-*   **Consistency**: A primary goal is uniform behavior across modules, specifically regarding error handling and naming conventions, which makes the library predictable for users.
-*   **Quality Assurance**: Promotion of any component to the stable public API requires comprehensive unit test coverage, ensuring reliability despite the simplified interface.
 
 ## Further Information
 
