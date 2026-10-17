@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:d212ed1f3d988e185d400dc15a10db079458af80e22452ea5460107246fe70ef",
+  "claims": [
+    {
+      "id": "claim_d8e443c6d0f54b5e9f57b79498cfbe32",
+      "statement": "easy_file_manager enforces a strict whitelist of file extensions ([txt, md, log, csv]) for all file operations and prevents overwriting existing files during creation.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_file_manager.py#L8-L102",
+          "version": "repo-lines-v1:sha256:53b984c45dc5fbc83d0764e7a4dd81ac953e76d64b8791c30ad84d750b9ca843:eyJzZWxlY3RlZExpbmVDb3VudCI6OTUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYTc5ZTU2OTY2YzE4MWRjYmVjYTU5NTliMzFjMzRjMjc0MzQ1YTY1OTU4Yjc5OWQ2NDYyYjdlOTAyY2FmNjMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjU5MDlhNTNhNjE4ZDAyOGUxZDMwMDBjMGE3YWJjZWVjYmU1ZmIzN2Y0ZTUxMWVmZTQ2NjQzZmFkNmU2Njg3MmYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6Ijk2ODkyMTA1MWFlZDI3MTZiN2E5MTE1MjQzMzEzNTRmOGM4OGFkMjYwMWE2ZDgwNjNhNWU0OTkyMDJjMzliNjciLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNkMDZjYjM2MDU2ZmJlZTVlY2Q5YmU0ZTJlYjNiODY2MTcyZThjMWVlOWM3YWJlYjg5MzE0NGM2YWY4YTQzMTkifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e28a5b1625b04dc3b0b9a6bbaa41dd6a",
+      "statement": "All errors in easy_file_manager are raised as instances of the custom EasyFileManagerError exception.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_file_manager.py#L11-L20",
+          "version": "repo-lines-v1:sha256:9c998979ded9809626615245e86993f2b2617068105526e43486dbb3f05b21db:eyJzZWxlY3RlZExpbmVDb3VudCI6MTAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQxZmU0OWRlMTNmMmMyNTA3NzdkMjIzOGE5NDkwOWRiYzZiYjQ4YzM0ZDlmMDE4ZjQ4ZGM5MWQ0NTkyZWVkNTMiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3OWVkYjU5NWQxNTZhNTBiMjA0NmI2YTdlOWM1NzEwZGMxNzVlNzZjZmU5YWY3MTFlYTcyNDJlNGRlNmY1NTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjRjMmNiODk3ZGIzN2MwNDQxZjQwMGQ1MjE5MGM4ODQ3MDVlMWE5ZGEzMmI4YjU2ZDU2ZWRiOTczYTIyOTdkMzkiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjNiN2EwYTA3N2JiMGMyYjE2NDRkNWZjNDUyM2VjNzEzNTFiMDFiY2FlODA0M2E5NGYzMTljNGJmMTY5ZTU4YWEifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_79ba5674444a44d6921a5b9a6c955f79",
+      "statement": "easy_file_manager provides simplified wrapper functions for basic filesystem tasks, including existence checks, writing, reading, deletion, renaming, listing, and copying of files.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_file_manager.py#L33-L365",
+          "version": "repo-lines-v1:sha256:83778ef25880145d226f508a04e450f44eb2077c9ecd17a86e84ff8676e2ed25:eyJzZWxlY3RlZExpbmVDb3VudCI6MzMzLCJmaXJzdFNlbGVjdGVkTGluZUhhc2giOiJmNzk3MDkxMDYzYjJiMDI0NzBhYzgxYWM3NzA2NTZiOWNmZDUzZjgzMzZkMTljYWMxNDEyODRkMmI3ZDgwMGFkIiwibGFzdFNlbGVjdGVkTGluZUhhc2giOiI0NDJjYzRiYTEyNjM5ZjQ5ZDM4OGNlYjA5NzlkM2I1Y2FmMWJhN2U2MzQwNGNiYWY0YWViNThmOWIxMzQzNTQ2IiwicHJlY2VkaW5nQ29udGV4dExpbmVDb3VudCI6MywicHJlY2VkaW5nQ29udGV4dEhhc2giOiI1MTA4NzEwZDIxN2UxOWIzMTE0NjkyMjJhMjg0NjcxODU3NmExZTE3ZmY2NWFlZGIxMjRiZTZlOGU3Y2E1ZWQ5IiwiZm9sbG93aW5nQ29udGV4dExpbmVDb3VudCI6MCwiZm9sbG93aW5nQ29udGV4dEhhc2giOiJlM2IwYzQ0Mjk4ZmMxYzE0OWFmYmY0Yzg5OTZmYjkyNDI3YWU0MWU0NjQ5YjkzNGNhNDk1OTkxYjc4NTJiODU1In0"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-17T08:11:38.702Z"
+  }
+}

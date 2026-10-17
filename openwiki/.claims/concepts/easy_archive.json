@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:ec41d4e430860532021a366c76154c0376f2502039384a4945842102582f316e",
+  "claims": [
+    {
+      "id": "claim_3bc56e9b3c4b4b2d9b61d9ba172cc114",
+      "statement": "easy_archive simplifies ZIP file and folder manipulation by providing high-level wrappers for Python's standard library.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L2-L3",
+          "version": "repo-lines-v1:sha256:2b7a466122df396bc66e5a306dbba1b3922a2ffaf880b6d3f08c1b8aa5936a8f:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMGU2ZmIyZWU2Y2E0ODUxYzRiOGQwZWQ5ZWVjZjM0NDQyMTlkYjU3NGZmY2QxMzk2NGY3NmUzZjcxYTU0OTkyOSIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYTMwM2VjZGQ0YTRkMTBmMTljNzNmZDQyZmQxMjQzN2ZkMzM1NGE4MjY4MTYwNWRhNTI1NWE5N2EzOTA2OGRiYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjEsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiYTMwM2VjZGQ0YTRkMTBmMTljNzNmZDQyZmQxMjQzN2ZkMzM1NGE4MjY4MTYwNWRhNTI1NWE5N2EzOTA2OGRiYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMGYxMzJiMWI2MTZiYTllNzVjNTczZTMxMzcxNDRlNGRmNWE1ODg1ODZiMGVhMTI3ODljMDQ2Y2Y0Y2U1ZmFmOCJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_47c46376639a4679a5a4ed478039cfd7",
+      "statement": "The zip_files function automatically renames files with duplicate base names within an archive to prevent data loss.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L137-L156",
+          "version": "repo-lines-v1:sha256:ce619a2e471580ccdcbac49265905797cc363293c8afb53b30ebafbc766fd985:eyJzZWxlY3RlZExpbmVDb3VudCI6MjAsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjRmY2Y4N2NjZDdlYWViZWY2ZGM5NjM2ZWUyYWEzMmQ0N2U4NjhlZjk3NWQ3NzJhNGQzYjk1MjYyMGViZmZmYmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjQ5NTQ4MjI3NTgxMjVmYTQ3ZjQ0YzAxMmM5ZTI2ODU2NGQ3ZjEyNzM4YWRkNWI5ZjMyZWY0MTIxZWVmMTYxNDkiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjBlNzMyYWQzN2UyZDJiMTBiZTE4OTQ4ZWNiYTRhZmVkMDY2NDkwM2NlZjJkYjBlNzA0YWNkN2Q2MGRlNzdlMjUiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjYwZGI2NTc2ZWNjZTVlMDJhZDY3ZTBkZDRmNDk3ZjBiN2NjNmU4ZmJkMDM2YjMxMjEyY2E3Nzg2YjA3ZWU5ODQifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_7debf368c5a24a8fb69c4f369b108b00",
+      "statement": "EasyArchiveError is used to provide consistent error reporting for file or archive access failures.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L9-L19",
+          "version": "repo-lines-v1:sha256:1a3c1efcff494e8f998b55a20219056c267e7f799d221f9626381353a8fb2408:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MDgxMjk4NDY0YjU4OTJmZjgzYmE5MzE3ZTNjMWM1NDEzYjRjMmJkNmMyYjk4NDE4Y2QzODNhODhhMzU2MDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3OWVkYjU5NWQxNTZhNTBiMjA0NmI2YTdlOWM1NzEwZGMxNzVlNzZjZmU5YWY3MTFlYTcyNDJlNGRlNmY1NTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzNzZhY2VhZjQ0ZWUzZmM4YWMyMGNkZWQ5ZGQ2MDY2MTdjMTg1YzFkMTViZDUzMTRlYzFmZTA3Y2U5OWQ3ZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNzE3NTQ4NWRkMWNkMTBmNGRhYmVjYjNmNDcyNTBkY2YwNzQwZjRkNWQ0MTVhYmJmZjQxZWI4ZWRlNTliMjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_cf94fc6e77224d24b80a18bdeba94049",
+      "statement": "Operations enforce standard .zip file extensions and validate file existence before performing operations.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L22-L29",
+          "version": "repo-lines-v1:sha256:c3fe6b0c40eb9d84d46ec141bdc824459d647d5aaa2968908f71c034d44ddf4d:eyJzZWxlY3RlZExpbmVDb3VudCI6OCwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZGM0ODZkYjkwN2Y3NDE0OTZhNzFkZmZjYTMyZDY2MzQ4OGM3MzgxOGYzNTJjNTYyYmU5MDE4OTQ1ZjE5MTdmMCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiYWFhNTg5NWU4YTJiN2FhYmQ3NDI3ZTE5OWIxNTA0MmM3ZmRiNGU0NDM1OTUyMzI0Mzg3YzZjYjI1Njk4OWZkMSIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiZDJhNmE5NWIxMGM3YmQxMjFmM2EwOGI3ZmNkNzRhNDEyOGQyZDdmODYyZjJmN2IxMjIwMmRmZjc5OTgzMTQ0OSIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiMDg1ZDJjNjY3ZjcwYzJlYWNiMDFhOTQyMjdjOGM1ZmRmZTllMDU4ZmI0ZmUwYmY5NTFkYTczMzQyNWI5Y2IxNSJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-17T08:11:38.702Z"
+  }
+}

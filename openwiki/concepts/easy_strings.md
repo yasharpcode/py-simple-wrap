@@ -3,15 +3,15 @@ type: module
 title: easy_strings
 description: A collection of beginner-friendly utility functions for common string manipulation tasks.
 tags: [python, strings, utilities, text-processing]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-f2f5b73375793cffe298f0eb
     resource: repo://py_simple_package/src/py_simple/easy_strings.py
   - id: openwiki-source-03214a37b626c5a6544f1e14
     resource: repo://tests/test_strings.py
 generated: { by: "openwiki/0.5.1", at: "2026-10-02T10:48:26.598Z" }
+verified:
+  - by: openwiki/0.5.1
+    at: 2026-10-17T08:11:38.702Z
 ---
 
 The `easy_strings` module provides a set of high-level, easy-to-use functions for common string manipulation operations, designed specifically for simplicity and readability. It abstracts complex regular expressions or multi-step string operations into single, intuitive function calls.

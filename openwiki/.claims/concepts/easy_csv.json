@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:2e4380aac1de935a920b7e7fd3c9ffdbad911a7c790e6ec0887be4e870977b8c",
+  "claims": [
+    {
+      "id": "claim_d10b505563f24525a23e12b5c24db2c2",
+      "statement": "The easy_csv module simplifies CSV file operations by providing high-level functions for reading to and writing from CSV files.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_csv.py",
+          "version": "repo-file-v1:sha256:e45af36a80fdce1b317496eeeefafed11e20a8f7708dfde2c5bba6d46297c342"
+        }
+      ]
+    },
+    {
+      "id": "claim_ed0b0af4b99042b2bb9a37f044f4097a",
+      "statement": "The read_csv_to_list function provides options to read CSV content into either a list of dictionaries (using the first row as headers) or a list of lists.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_csv.py",
+          "version": "repo-file-v1:sha256:e45af36a80fdce1b317496eeeefafed11e20a8f7708dfde2c5bba6d46297c342"
+        }
+      ]
+    },
+    {
+      "id": "claim_b7eae6c4487443a189d843e345c9ad35",
+      "statement": "The write_csv_from_list function supports writing data to CSV files from both lists of dictionaries and lists of lists, managing header generation and delimiter settings automatically.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_csv.py",
+          "version": "repo-file-v1:sha256:e45af36a80fdce1b317496eeeefafed11e20a8f7708dfde2c5bba6d46297c342"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-17T08:11:38.702Z"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "pageVersion": "sha256:9a188443503d89c8612a2189dfe941371d0b6243538b2448e2e459b8e0a46ad1",
+  "pageVersion": "sha256:f011f8a36951023d837e0d2445fc69681e2773053e34705fdfb9e4b769808da6",
   "claims": [
     {
       "id": "claim_1e7e3aecae8a4b54b3fb07309d005ac7",
@@ -8,7 +8,7 @@
       "evidence": [
         {
           "resource": "repo://py_simple_package/src/py_simple/easy_strings.py",
-          "version": "repo-file-v1:sha256:9292331dc2f748660cef2a4c6f82a32b72ecc6aa0ea163d7e0ddd09a806f36a2"
+          "version": "repo-file-v1:sha256:add85e26353bbd9e896cfdf80467996358433b98ec24e2e1208e56dba005796c"
         }
       ]
     },
@@ -18,13 +18,13 @@
       "evidence": [
         {
           "resource": "repo://tests/test_strings.py",
-          "version": "repo-file-v1:sha256:f3aed8f0a0255d24698161ae10f3167cb8ac7b69745322fa6f0331680eeec375"
+          "version": "repo-file-v1:sha256:917f2b9140a479c25e1a3297f896b6994ac06935f2931fcf8d94b02ff93f1fc7"
         }
       ]
     }
   ],
   "verification": {
     "by": "openwiki/0.5.1",
-    "at": "2026-10-02T10:48:26.598Z"
+    "at": "2026-10-17T08:11:38.702Z"
   }
 }
