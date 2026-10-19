@@ -1,0 +1,64 @@
+image: node:22
+
+# OpenWiki -> Bitbucket Pipelines
+# Replaces .github/workflows/openwiki-update.yml
+#
+# One-time setup:
+#   1. Repository settings > Repository variables (tick "Secured" for secrets):
+#        OPENWIKI_PROVIDER          e.g. openrouter | anthropic | openai
+#        OPENWIKI_MODEL_ID          a model ID valid for that provider
+#        <PROVIDER>_API_KEY         e.g. OPENROUTER_API_KEY or ANTHROPIC_API_KEY
+#        OPENWIKI_BITBUCKET_TOKEN   repository access token with write access to
+#                                   repositories and pull requests
+#        LANGSMITH_API_KEY          (optional) tracing
+#   2. Repository settings > Pipelines > Schedules:
+#        Branch: main, Pipeline: custom: openwiki-update, e.g. daily.
+#   3. Trigger once manually: Pipelines > Run pipeline > Custom: openwiki-update.
+
+pipelines:
+  custom:
+    openwiki-update:
+      - step:
+          name: Run OpenWiki update and open PR
+          # Full history: OpenWiki diffs HEAD against the commit it last documented.
+          clone:
+            depth: full
+          script:
+            - apt-get update && apt-get install -y git curl jq
+            # mermaid + jsdom are optional (diagram validation). Remove if the wiki has none.
+            - npm install --global openwiki mermaid@11.16.0 jsdom@29.1.1
+            - git config user.name "${BITBUCKET_USER_NAME:-OpenWiki Bot}"
+            - git config user.email "${BITBUCKET_USER_EMAIL:-openwiki@example.com}"
+            - export LANGCHAIN_PROJECT=openwiki
+            # OpenWiki can publish partial progress, so record failure instead of exiting now.
+            - openwiki code --update --print || touch /tmp/openwiki_failed
+            # Transient run state must not be committed.
+            - rm -f -- openwiki/.run.json
+            - |
+              PATHS="openwiki"
+              for f in AGENTS.md CLAUDE.md; do [ -e "$f" ] && PATHS="$PATHS $f"; done
+              if [ -z "$(git status --porcelain -- $PATHS)" ]; then
+                echo "OpenWiki is already up to date."
+                [ -f /tmp/openwiki_failed ] && exit 1
+                exit 0
+              fi
+              BRANCH="openwiki/update-${BITBUCKET_BUILD_NUMBER}"
+              git checkout -b "$BRANCH"
+              git add $PATHS
+              git commit -m "docs: update OpenWiki"
+              git push "https://x-token-auth:${OPENWIKI_BITBUCKET_TOKEN}@bitbucket.org/${BITBUCKET_WORKSPACE}/${BITBUCKET_REPO_SLUG}.git" "$BRANCH"
+              BODY=$(jq -n \
+                --arg title "docs: update OpenWiki" \
+                --arg desc "Automated OpenWiki documentation update from the scheduled Bitbucket pipeline (build ${BITBUCKET_BUILD_NUMBER})." \
+                --arg src "$BRANCH" \
+                --arg dst "${BITBUCKET_BRANCH:-main}" \
+                '{title:$title, description:$desc, source:{branch:{name:$src}}, destination:{branch:{name:$dst}}, close_source_branch:true}')
+              curl --fail --silent --show-error --request POST \
+                --url "https://api.bitbucket.org/2.0/repositories/${BITBUCKET_WORKSPACE}/${BITBUCKET_REPO_SLUG}/pullrequests" \
+                --header "Authorization: Bearer ${OPENWIKI_BITBUCKET_TOKEN}" \
+                --header "Content-Type: application/json" \
+                --data "$BODY"
+              if [ -f /tmp/openwiki_failed ]; then
+                echo "OpenWiki failed part-way; the PR holds partial progress."
+                exit 1
+              fi
