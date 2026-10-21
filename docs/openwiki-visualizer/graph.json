@@ -1,0 +1,166 @@
+{
+  "root": "openwiki",
+  "generatedAt": "2026-10-21T10:49:27.937Z",
+  "types": [
+    "Reference",
+    "Section"
+  ],
+  "nodes": [
+    {
+      "id": "concepts/easy_archive",
+      "title": "easy_archive",
+      "type": "Reference",
+      "description": "",
+      "tags": [],
+      "body": "<okf_front_matter>\r\n---\r\ntype: Reference\r\ntitle: easy_archive\r\ndescription: A utility module for simplifying the creation and management of ZIP archives in Python.\r\ntags: [python, utilities, file-management, zip]\r\n---\r\n</okf_front_matter>\r\n\r\nThe `easy_archive` module provides a simplified interface for zipping and unzipping files and folders, abstracting away the boilerplate code typically required when using the standard `zipfile` library.\r\n\r\n## Main Functions\r\n\r\n*   **`zip_folder(folder_path, zip_name=None)`**: Compresses an entire directory into a `.zip` file.\r\n    ```python\r\n    from py_simple.easy_archive import zip_folder\r\n    zip_folder(\"my_data\")  # Creates 'my_data.zip'\r\n    ```\r\n\r\n*   **`zip_files(file_paths, zip_name)`**: Creates an archive from a specific list of files.\r\n    ```python\r\n    from py_simple.easy_archive import zip_files\r\n    zip_files([\"data1.txt\", \"data2.txt\"], \"archive.zip\")\r\n    ```\r\n\r\n## Related modules\r\n\r\n- [easy_csv](easy_csv.md)\r\n- [easy_file_manager](easy_file_manager.md)\r\n\r\n## Back-link\r\n\r\n[Easy Modules](index.md)\r\n\r\n## Tests\r\n\r\nThe `tests/test_archive.py` file covers edge cases such as missing source files, invalid file extensions, and path handling.\r\n",
+      "size": 1206,
+      "links": [
+        "concepts/easy_csv",
+        "concepts/easy_file_manager",
+        "concepts/index"
+      ],
+      "backlinks": [
+        "concepts/easy_csv",
+        "concepts/easy_file_manager",
+        "concepts/module_map"
+      ]
+    },
+    {
+      "id": "concepts/easy_csv",
+      "title": "easy_csv",
+      "type": "Reference",
+      "description": "",
+      "tags": [],
+      "body": "<okf_front_matter>\r\n---\r\ntype: Reference\r\ntitle: easy_csv\r\ndescription: A module to simplify reading and writing CSV files.\r\ntags: [csv, data-processing]\r\n---\r\n</okf_front_matter>\r\n\r\n# easy_csv\r\n\r\n`easy_csv` simplifies the process of reading and writing CSV files in Python by providing higher-level abstractions over standard library functions.\r\n\r\n## Main functions\r\n\r\n- `read_csv_to_list`: Reads a CSV file and returns its content as a list of dictionaries or lists.\r\n  ```python\r\n  data = read_csv_to_list(filepath=\"data.csv\")\r\n  ```\r\n\r\n## Related modules\r\n\r\n- [easy_file_manager](easy_file_manager.md)\r\n- [easy_archive](easy_archive.md)\r\n\r\n## Back-link\r\n\r\n[Easy Modules](index.md)\r\n\r\n## Tests\r\n\r\nThe `tests/test_easy_csv.py` file covers file reading, CSV parsing, and error handling for empty or non-existent files.\r\n",
+      "size": 821,
+      "links": [
+        "concepts/easy_file_manager",
+        "concepts/easy_archive",
+        "concepts/index"
+      ],
+      "backlinks": [
+        "concepts/easy_archive",
+        "concepts/easy_file_manager",
+        "concepts/module_map"
+      ]
+    },
+    {
+      "id": "concepts/easy_file_manager",
+      "title": "easy_file_manager",
+      "type": "Reference",
+      "description": "",
+      "tags": [],
+      "body": "<okf_front_matter>\r\n---\r\ntype: Reference\r\ntitle: easy_file_manager\r\ndescription: A module to simplify common file system operations.\r\ntags: [file-io, file-system]\r\n---\r\n</okf_front_matter>\r\n\r\n# easy_file_manager\r\n\r\n`easy_file_manager` provides simplified utilities for common file system operations, such as checking for file existence.\r\n\r\n## Main functions\r\n\r\n- `is_file_there`: Checks if a file exists in the current working directory.\r\n  ```python\r\n  exists = is_file_there(\"data.txt\")\r\n  ```\r\n\r\n## Related modules\r\n\r\n- [easy_csv](easy_csv.md)\r\n- [easy_archive](easy_archive.md)\r\n\r\n## Back-link\r\n\r\n[Easy Modules](index.md)\r\n\r\n## Tests\r\n\r\nThe `tests/test_easy_file_manager.py` file covers file existence checks and error handling for invalid operations.\r\n",
+      "size": 757,
+      "links": [
+        "concepts/easy_csv",
+        "concepts/easy_archive",
+        "concepts/index"
+      ],
+      "backlinks": [
+        "concepts/easy_archive",
+        "concepts/easy_csv",
+        "concepts/module_map"
+      ]
+    },
+    {
+      "id": "concepts/index",
+      "title": "Concepts",
+      "type": "Section",
+      "description": "",
+      "tags": [],
+      "body": "<okf_front_matter>\r\n---\r\ntype: Reference\r\ntitle: Easy Modules\r\ndescription: Overview of the Easy Modules component of the py_simple package.\r\ntags: [overview, py_simple]\r\n---\r\n</okf_front_matter>\r\n\r\n# Easy Modules\r\n\r\nThe `py_simple` package provides a set of \"Easy\" modules designed to simplify common Python programming tasks.\r\n\r\n## Module Map\r\n\r\n- [Module Map](module_map.md)\r\n",
+      "size": 379,
+      "links": [
+        "concepts/module_map"
+      ],
+      "backlinks": [
+        "concepts/easy_archive",
+        "concepts/easy_csv",
+        "concepts/easy_file_manager"
+      ]
+    },
+    {
+      "id": "concepts/module_map",
+      "title": "Module Map",
+      "type": "Reference",
+      "description": "",
+      "tags": [],
+      "body": "<okf_front_matter>\r\n---\r\ntype: Reference\r\ntitle: Module Map\r\ndescription: Index of all documented modules in the py_simple package.\r\ntags: [index, modules]\r\n---\r\n</okf_front_matter>\r\n\r\n# Module Map\r\n\r\n- [easy_csv](easy_csv.md)\r\n- [easy_file_manager](easy_file_manager.md)\r\n- [easy_archive](easy_archive.md)\r\n",
+      "size": 308,
+      "links": [
+        "concepts/easy_csv",
+        "concepts/easy_file_manager",
+        "concepts/easy_archive"
+      ],
+      "backlinks": [
+        "concepts/index"
+      ]
+    },
+    {
+      "id": "index",
+      "title": "Home",
+      "type": "Section",
+      "description": "",
+      "tags": [],
+      "body": "\r\n# Directories\r\n\r\n- [concepts](concepts/)\r\n",
+      "size": 44,
+      "links": [],
+      "backlinks": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "concepts/easy_archive",
+      "target": "concepts/easy_csv"
+    },
+    {
+      "source": "concepts/easy_archive",
+      "target": "concepts/easy_file_manager"
+    },
+    {
+      "source": "concepts/easy_archive",
+      "target": "concepts/index"
+    },
+    {
+      "source": "concepts/easy_csv",
+      "target": "concepts/easy_file_manager"
+    },
+    {
+      "source": "concepts/easy_csv",
+      "target": "concepts/easy_archive"
+    },
+    {
+      "source": "concepts/easy_csv",
+      "target": "concepts/index"
+    },
+    {
+      "source": "concepts/easy_file_manager",
+      "target": "concepts/easy_csv"
+    },
+    {
+      "source": "concepts/easy_file_manager",
+      "target": "concepts/easy_archive"
+    },
+    {
+      "source": "concepts/easy_file_manager",
+      "target": "concepts/index"
+    },
+    {
+      "source": "concepts/index",
+      "target": "concepts/module_map"
+    },
+    {
+      "source": "concepts/module_map",
+      "target": "concepts/easy_csv"
+    },
+    {
+      "source": "concepts/module_map",
+      "target": "concepts/easy_file_manager"
+    },
+    {
+      "source": "concepts/module_map",
+      "target": "concepts/easy_archive"
+    }
+  ]
+}
