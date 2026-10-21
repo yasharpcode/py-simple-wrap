@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:6d554beaa76f4fff656c509041c260166ad7d06f9ad1c9006c83d4a4019b1baf",
+  "claims": [
+    {
+      "id": "claim_b7e7e53eb1b94f78814a0068e9b92288",
+      "statement": "The easy_archive module provides high-level abstractions for common ZIP archive operations, simplifying file and folder compression.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L2-L3",
+          "version": "repo-lines-v1:sha256:f7f3202c8140a1133cde6c15171a56036faa0b06d84af9386fa31e11211d55f9:eyJzZWxlY3RlZExpbmVDb3VudCI6MiwiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiZTQ0NTRmOTFjMjM0NTRkM2JjYWFiOTZiYzY2NTZlZTc3Y2Q5MjljNTUxYzcxOTVjNDBjNTQxMzJkMWExMTA1MyIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiNDc1ZDQ1ODllOTFjYzhjYjk3NDg4OWRhYjAxZGUxNWRiMTU3NGNhMTBlZWM3MjkwYTEwOWJmNTg4Yzk0ZTAxYiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjEsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNDc1ZDQ1ODllOTFjYzhjYjk3NDg4OWRhYjAxZGUxNWRiMTU3NGNhMTBlZWM3MjkwYTEwOWJmNTg4Yzk0ZTAxYiIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiNjdkZjRiNzAxMjM5ODRhMDA1ZTgyNDBlMTQ5NGI5NzRmOWVlMDNlNzBhMWE4MzMwZjgzYWJjMTZiNTYwMmE0YyJ9"
+        }
+      ]
+    },
+    {
+      "id": "claim_0c371510d80c492493d03cdf1545f01a",
+      "statement": "The module defines EasyArchiveError, which is raised when archive operations fail, such as when providing incorrect file extensions or attempting to zip non-existent paths.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L9-L19",
+          "version": "repo-lines-v1:sha256:2c39c672d3ec834c11db9ae698b63a2192b39b8fc558bc5b27d8d609e20fdef3:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMyODExMjQ4OTFmMGM4NTVhOTVjNDQ1MmM1NTcyOGRlY2VlNmUwZWU2OTU0OTBmMjMyMjdlNDMxODhlNDA4OWYiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjMxMmU2OWZiZDQ2MmNlYzMxZmVhMTcxZjVkZTk0YjI4MWEwMDkzZWVmMDJhOTJlZWQ2YWJmMDc4ZWE3Yzg0YTQiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjIwNjUxYzZiNGIxODYzODM5NjU1ODFlMWVkYjRmNDU5OGJlNzgwYjg5N2RiOWJjNTUyYjM5ODA5NzBjMzdkOTMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjlkZjRkOGQ3Njg1MTZlYzljZTA5ZGJiOTkxOTA1YTE0YTliOWFlYzBjNWU1MWVhZGJmZmY3OTIyYzQ2NTdjYWIifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_e0ec190c8341488897ea9a4bef113a3d",
+      "statement": "The module's functionality is verified through tests located in tests/test_archive.py, covering various scenarios including successful compression and error handling for missing inputs.",
+      "evidence": [
+        {
+          "resource": "repo://tests/test_archive.py#L29-L64",
+          "version": "repo-lines-v1:sha256:618dfcdf51e08b660f07769e32de128d7f5bb1854059b0157d6a223b7057a0c1:eyJzZWxlY3RlZExpbmVDb3VudCI6MzYsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjAxNmZiN2FjZmJkMjEwMGYzNjIzYmQwYWJkZGFiNmU0Nzc2MDA4ZWMxMDk3YWY1ZWRiMWEyMTI1YWE1MjEzZmEiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6IjdlYjcwMjU3NTkzZGEwNmY2ODJhM2RkZGE1NGE5ZDI2MGQ0ZmM1MTRmNjQ1MjM3ZjVjYTc0YjA4ZjhkYTYxYTYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6ImE4YzNkM2UzNzkyNjhkZjg0NTYxNTBjM2M4Yzc3MzNmYTVkYWJkMzI0MGEwNzk3OWViMmJkNTQ1NTFlYTM5NGMiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6Ijc5YzY1M2M5NGI4ODJkNGYzNGQxNzQ2OWRhZmE5MmU5YWM1OTgxOGY2ZWIwN2U3YWZlZWI5YjM3NjRjZjFkMDcifQ"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-20T06:08:57.245Z"
+  }
+}
