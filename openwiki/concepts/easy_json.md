@@ -3,9 +3,6 @@ type: concept
 title: easy_json
 description: A utility module designed to simplify common JSON file operations and data manipulation with consistent error handling.
 tags: [json, utility, py_simple]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-942619f3d8244bc55818b59a
     resource: repo://py_simple_package/src/py_simple/easy_json.py

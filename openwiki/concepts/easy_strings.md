@@ -3,9 +3,6 @@ type: module
 title: easy_strings
 description: A collection of beginner-friendly utility functions for common string manipulation tasks.
 tags: [python, strings, utilities, text-processing]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-f2f5b73375793cffe298f0eb
     resource: repo://py_simple_package/src/py_simple/easy_strings.py

@@ -3,9 +3,6 @@ type: concept
 title: Easy Modules
 description: The 'easy_*' modules are a collection of high-level utility libraries designed to simplify common Python programming tasks by abstracting boilerplate code and complex APIs.
 tags: [architecture, design-philosophy, modules, utilities]
-verified:
-  - by: openwiki/0.5.1
-    at: 2026-10-02T10:48:26.598Z
 sources:
   - id: openwiki-source-ca6cb4b1a14fd7969dfae3ec
     resource: repo://CHANGELOG.md
