@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "pageVersion": "sha256:67beece220f71f59baaad5cbf1d17e4c9d1437fca6241356539f124934b00ee4",
+  "claims": [
+    {
+      "id": "claim_2125dfb7a1b94d598b9fe4b739a3f705",
+      "statement": "The easy_archive module uses the EasyArchiveError exception class to handle errors related to archiving operations, such as missing files or incorrect file extensions.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L9-L19",
+          "version": "repo-lines-v1:sha256:1a3c1efcff494e8f998b55a20219056c267e7f799d221f9626381353a8fb2408:eyJzZWxlY3RlZExpbmVDb3VudCI6MTEsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjE0MDgxMjk4NDY0YjU4OTJmZjgzYmE5MzE3ZTNjMWM1NDEzYjRjMmJkNmMyYjk4NDE4Y2QzODNhODhhMzU2MDQiLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6Ijc3OWVkYjU5NWQxNTZhNTBiMjA0NmI2YTdlOWM1NzEwZGMxNzVlNzZjZmU5YWY3MTFlYTcyNDJlNGRlNmY1NTciLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjUzNzZhY2VhZjQ0ZWUzZmM4YWMyMGNkZWQ5ZGQ2MDY2MTdjMTg1YzFkMTViZDUzMTRlYzFmZTA3Y2U5OWQ3ZTAiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6IjdlNzE3NTQ4NWRkMWNkMTBmNGRhYmVjYjNmNDcyNTBkY2YwNzQwZjRkNWQ0MTVhYmJmZjQxZWI4ZWRlNTliMjMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_28fbf38566984e7f9137fe644cdb28ad",
+      "statement": "zip_folder provides a simplified, recursive interface for zipping entire directory structures with optional control over the output archive name.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L32-L66",
+          "version": "repo-lines-v1:sha256:d87905e0dd5d1450c611cf31cc5f93f47e3bb320d1132c90ca6b5dbe42d137d5:eyJzZWxlY3RlZExpbmVDb3VudCI6MzUsImZpcnN0U2VsZWN0ZWRMaW5lSGFzaCI6IjM5MGZlZWZhMjdkYWUyYjhiYWU2Nzk2MmViMDE4ZWVhZjI5MGU1ZDQ0YTM2ODAyMjJiNGNiNmE4YjU1MjJkOTciLCJsYXN0U2VsZWN0ZWRMaW5lSGFzaCI6ImE2YTcxNTI1NzJlZTg0ZjEwOTA2Yzc0YjlmMmE5MjQzNGRkYWIwZTNjNDI4MTNiMDRlNTk3ZWZjZWM5NTFiMjYiLCJwcmVjZWRpbmdDb250ZXh0TGluZUNvdW50IjozLCJwcmVjZWRpbmdDb250ZXh0SGFzaCI6IjU1YzQ1OWI2ZmVlNzZlZjBmYmY2NWFjNjhlMjcyNmU1MTU5YzA0MzZkMWMyZDdjZmZiNTc1NGM4YzBhNzk1ZDQiLCJmb2xsb3dpbmdDb250ZXh0TGluZUNvdW50IjozLCJmb2xsb3dpbmdDb250ZXh0SGFzaCI6ImI1ZDNkYTQzOGNhZTcyZmU4YTFjZjlhNGZmMWMyMWE2MDg4ODZkNDIyNmYwMDUxZDcwODVhMmU0Mzc0NzhiOWMifQ"
+        }
+      ]
+    },
+    {
+      "id": "claim_3d63039014d74bebb52d8149080dcc9d",
+      "statement": "zip_files enables archiving of multiple specific files, including automatic handling of filename collisions inside the archive to prevent data loss.",
+      "evidence": [
+        {
+          "resource": "repo://py_simple_package/src/py_simple/easy_archive.py#L91-L97",
+          "version": "repo-lines-v1:sha256:2d29a39b51d926eb6e29d687c9d42e094629813b10e0828d5bf7335ce990ac6e:eyJzZWxlY3RlZExpbmVDb3VudCI6NywiZmlyc3RTZWxlY3RlZExpbmVIYXNoIjoiMWNlNWVmOGU0NzU5ZTM1YTQ0OWIyN2FkMDlmYzBjYWIxOTI2OTc3OTk5YzA2ZjIyNzA2NDY4MmY5ODI4Zjc2OCIsImxhc3RTZWxlY3RlZExpbmVIYXNoIjoiMDFiYTQ3MTljODBiNmZlOTExYjA5MWE3YzA1MTI0YjY0ZWVlY2U5NjRlMDljMDU4ZWY4Zjk4MDVkYWNhNTQ2YiIsInByZWNlZGluZ0NvbnRleHRMaW5lQ291bnQiOjMsInByZWNlZGluZ0NvbnRleHRIYXNoIjoiNTVjNDU5YjZmZWU3NmVmMGZiZjY1YWM2OGUyNzI2ZTUxNTljMDQzNmQxYzJkN2NmZmI1NzU0YzhjMGE3OTVkNCIsImZvbGxvd2luZ0NvbnRleHRMaW5lQ291bnQiOjMsImZvbGxvd2luZ0NvbnRleHRIYXNoIjoiYmM2NWU5MzQ3NDNiNzFlYjBiZjEwNGM0Yzc3YmQ2N2JmODZkOGFlZGJiOWE1MmZkMzU5OWQ3MmYzOTcxOGQ4YiJ9"
+        }
+      ]
+    }
+  ],
+  "verification": {
+    "by": "openwiki/0.5.1",
+    "at": "2026-10-21T08:23:23.109Z"
+  }
+}
